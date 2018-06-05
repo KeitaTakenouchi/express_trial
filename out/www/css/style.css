@@ -1,3 +1,7 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .before {
     color: cadetblue;
 }
@@ -7,6 +11,25 @@
 }
 
 div {
-    font-size: 140px;
- 
+    font-size: 20px;
+}
+
+.main{
+    padding-left: 200px;
+}
+
+.side-content{
+    width: 200px;
+    height: 80%;
+    background-color:white;
+    position: absolute;
+    overflow-y: scroll;
+}
+
+.side-content span{
+    display: block;
+}
+
+.program_item:hover{
+    background-color: gray;
 }

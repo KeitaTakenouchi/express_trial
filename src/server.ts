@@ -5,7 +5,6 @@ const app = express();
 app.use(express.static(__dirname + "/www"));
 
 app.get("/", (req, res) => {
-    console.log(req);
     res.write("foo");
     res.end();
 });
@@ -19,6 +18,15 @@ app.get("/search/:name", (req, res) => {
     res.setHeader("Content-Type", "application/json");
     let name = req.params.name;
     res.json(name);
+    res.end();
+});
+
+app.get("/search/:program/:line", (req, res) => {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json");
+    let program = req.params.program;
+    let line = req.params.line;
+    res.json({ program: program, line: line });
     res.end();
 });
 
