@@ -33,3 +33,21 @@ div {
 .program_item:hover{
     background-color: gray;
 }
+
+#right_bar{
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    background-color: whitesmoke;
+    opacity: 0.9;
+}
+
+.rect{
+    right: 0px;
+    width: 70px;
+    position: fixed;
+    background-color: yellow;
+    opacity: 0.8;
+}
